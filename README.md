@@ -6,6 +6,10 @@ You can get in touch with my by writing an e-mail to [jakub@apkeo.pl](mailto:jak
 
 I've created 2 packages o**n top of my own boilerplate**, each one must be launched in order for app to work properly. In this document you will find a tiny description and instructions to run each one of them.
 
+## See it in action
+https://user-images.githubusercontent.com/14796199/232466922-af4bf7f3-9f10-494d-8d15-f52caa7e613d.mp4
+
+
 ## Requirements for all packages
 - Node 18.15+ [(Download)](https://nodejs.org/en/download/)
 - Docker [(Download)](https://www.docker.com/products/docker-desktop/)
