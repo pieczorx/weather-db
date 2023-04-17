@@ -15,7 +15,8 @@ import {
 const weatherApiStore = useWeatherApiStore()
 const weatherMeasurementStore = useWeatherMeasurementStore()
 
-const cityName = $ref<string>('')
+const inputRef = $ref(null)
+let cityName = $ref<string>('')
 let isWeatherMeasurementInProgress = $ref<boolean>(false)
 
 
@@ -26,6 +27,8 @@ const createWeatherMeasurement = async () => {
     weatherMeasurementStore.addMeasurement(response.weatherMeasurement)
   } finally {
     isWeatherMeasurementInProgress = false
+    cityName = ''
+    inputRef.focus()
   }
 }
 </script>
@@ -37,7 +40,13 @@ const createWeatherMeasurement = async () => {
         Check for weather in <span class="underscore">any&nbsp;city</span>
       </h1>
       <div class="form">
-        <input class="textbox" placeholder="Enter city name" v-model="cityName"/>
+        <input
+          class="textbox"
+          placeholder="Enter city name"
+          v-model="cityName"
+          :ref="(ref) => inputRef = ref"
+          @keydown.enter="createWeatherMeasurement"
+        />
         <ButtonComponent class="go-button" :isLoading="isWeatherMeasurementInProgress" @click="createWeatherMeasurement">Go</ButtonComponent>
       </div>
     </ViewportCenterComponent>
