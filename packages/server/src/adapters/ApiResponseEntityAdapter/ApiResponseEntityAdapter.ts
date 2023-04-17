@@ -12,14 +12,14 @@ export class ApiResponseEntityAdapter implements IApiResponseEntityAdapter {
       weatherData,
       providerType,
       createdAt,
-      cityName
+      cityName,
     } = weatherMeasurement
     return {
       id,
       weatherData,
       providerType,
       createdAt,
-      cityName
+      cityName,
     }
   }
 }

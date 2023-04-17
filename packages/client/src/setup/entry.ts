@@ -11,7 +11,7 @@ const vueApp = createApp(App)
 const pinia = createPinia()
 vueApp.use(pinia)
 
-const routes = setupClientRoutes(pinia)
+const routes = setupClientRoutes()
 const router = setupRouter(routes)
 vueApp.use(router)
 

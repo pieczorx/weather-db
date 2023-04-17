@@ -1,7 +1,7 @@
 import {IBaseApiRequestInterfaces} from '../../../../../types/IBaseApiRequestInterfaces'
 import {WeatherProviderType} from '../../../../../services/WeatherProviderService/enum/WeatherProviderType'
 import {
-  IWeatherMeasurementResponseEntity
+  IWeatherMeasurementResponseEntity,
 } from '../../../../../adapters/ApiResponseEntityAdapter/types/responseEntities/IWeatherMeasurementResponseEntity'
 
 export interface ICreateWeatherMeasurementRequestInterfaces extends IBaseApiRequestInterfaces {

@@ -4,24 +4,19 @@ import {
 } from '@pieczorx-weather/server/src/adapters/ApiResponseEntityAdapter/types/responseEntities/IWeatherMeasurementResponseEntity'
 import WeatherMeasurementItem from '@pieczorx-weather/client/src/modules/weather/components/WeatherMeasurementItem.vue'
 
-interface Emits {
-  (e: 'event1', payload: string): void
-}
-
 interface Props {
   weatherMeasurements: IWeatherMeasurementResponseEntity[]
 }
 
 const props = defineProps<Props>()
 
-const emit = defineEmits<Emits>()
 </script>
 
 <template>
   <div class="weather-measurement-list">
     <TransitionGroup name="list-transition">
       <WeatherMeasurementItem
-        v-for="weatherMeasurement in weatherMeasurements"
+        v-for="weatherMeasurement in props.weatherMeasurements"
         :weatherMeasurement="weatherMeasurement"
         :key="weatherMeasurement.id"
       />

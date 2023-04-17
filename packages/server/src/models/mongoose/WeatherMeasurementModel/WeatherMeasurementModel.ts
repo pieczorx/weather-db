@@ -14,18 +14,18 @@ const WeatherMeasurementModel = new Schema<IWeatherMeasurementEntity>({
   },
   weatherData: {
     temperature: {
-      type: Schema.Types.Number
+      type: Schema.Types.Number,
     },
     pressure: {
-      type: Schema.Types.Number
+      type: Schema.Types.Number,
     },
     humidity: {
-      type: Schema.Types.Number
+      type: Schema.Types.Number,
     },
     windSpeed: {
-      type: Schema.Types.Number
+      type: Schema.Types.Number,
     },
-  }
+  },
 }, {
   timestamps: true,
 })

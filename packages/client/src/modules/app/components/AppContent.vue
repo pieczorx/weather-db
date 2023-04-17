@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {onBeforeUnmount, watch} from 'vue'
+import {onBeforeUnmount} from 'vue'
 import {$computed, $ref} from 'vue/macros'
 import PageLoadingBar from '@pieczorx-weather/client/src/modules/app/components/PageLoadingBar.vue'
 import {useAppStore} from '@pieczorx-weather/client/src/stores/AppStore/useAppStore'

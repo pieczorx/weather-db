@@ -1,8 +1,7 @@
 import {RouteRecordRaw} from 'vue-router'
 import {RouteName} from './enum/RouteName'
-import {Pinia} from 'pinia'
 
-export function setupClientRoutes(pinia: Pinia): RouteRecordRaw[] {
+export function setupClientRoutes(): RouteRecordRaw[] {
   return [
     {
       path: '/',

@@ -1,6 +1,6 @@
 import {IBaseApiRequestInterfaces} from '../../../../../types/IBaseApiRequestInterfaces'
 import {
-  IWeatherMeasurementResponseEntity
+  IWeatherMeasurementResponseEntity,
 } from '../../../../../adapters/ApiResponseEntityAdapter/types/responseEntities/IWeatherMeasurementResponseEntity'
 
 export interface IGetWeatherMeasurementsRequestInterfaces extends IBaseApiRequestInterfaces {

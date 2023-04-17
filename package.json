@@ -9,7 +9,8 @@
     "lint": "yarn workspaces run lint",
     "ts": "yarn workspaces run ts",
     "dev:server": "yarn workspace pieczorx-weather-server dev",
-    "dev:client": "yarn workspace pieczorx-weather-client dev"
+    "dev:client": "yarn workspace pieczorx-weather-client dev",
+    "compose:up": "yarn workspace pieczorx-weather-server compose:up"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.39.0",

@@ -43,10 +43,11 @@ const dataItems = $computed(() => {
     <div class="city-name">{{props.weatherMeasurement.cityName}}</div>
     <div class="data">
       <WeatherMeasurementDataItem
-        v-for="dataItem in dataItems"
+        v-for="(dataItem, i) in dataItems"
         :title="dataItem.title"
         :value="dataItem.value"
         :suffix="dataItem.suffix"
+        :key="i"
       />
     </div>
   </div>

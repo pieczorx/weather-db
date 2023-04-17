@@ -1,8 +1,4 @@
 <script setup lang="ts">
-interface Emits {
-  (e: 'event1', payload: string): void
-}
-
 interface Props {
   value: number
   title: string
@@ -10,8 +6,6 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {})
-
-const emit = defineEmits<Emits>()
 </script>
 
 <template>

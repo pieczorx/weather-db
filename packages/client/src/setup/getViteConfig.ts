@@ -2,7 +2,6 @@ import {resolve, join} from 'path'
 import dotEnvExtended from 'dotenv-extended'
 import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
-import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 
 export function getViteConfig({mode}) {
   let configPath = resolve(__dirname, `../../../../config/env/client/.env.${mode}`)
@@ -19,9 +18,6 @@ export function getViteConfig({mode}) {
     plugins: [
       vue({
         reactivityTransform: true,
-      }),
-      VueI18nPlugin({
-        include: join(srcPath, 'translations/**'),
       }),
     ],
     root: srcPath,

@@ -1,10 +1,10 @@
 import {IApiRequest} from '../../../types/IApiRequest.js'
 import {Response} from 'express'
 import {
-  ICreateWeatherMeasurementRequestInterfaces
+  ICreateWeatherMeasurementRequestInterfaces,
 } from '../validators/CreateWeatherMeasurement/types/ICreateWeatherMeasurementRequestInterfaces'
 import {
-  IGetWeatherMeasurementsRequestInterfaces
+  IGetWeatherMeasurementsRequestInterfaces,
 } from '../validators/GetWeatherMeasurements/types/IGetWeatherMeasurementsRequestInterfaces'
 
 export interface IWeatherController {
