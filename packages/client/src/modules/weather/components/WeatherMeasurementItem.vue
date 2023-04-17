@@ -32,7 +32,7 @@ const dataItems = $computed(() => {
     {
       title: 'Press',
       value: props.weatherMeasurement.weatherData.pressure,
-      suffix: 'st',
+      suffix: 'hPa',
     },
   ]
 })
