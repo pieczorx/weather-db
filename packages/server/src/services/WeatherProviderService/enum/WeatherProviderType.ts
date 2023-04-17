@@ -1,4 +1,4 @@
 export enum WeatherProviderType {
   OpenWeatherMap = 'open-weather-map',
-  OpenMeteo = 'open-meteo',
+  // OpenMeteo = 'open-meteo', // TODO: Implement Open Meteo strategy
 }
