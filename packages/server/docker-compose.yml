@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  mongo:
+    container_name: weather-mongo
+    image: mongo:5
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: iliketheweather
+    ports:
+      - '27036:27017'
+    volumes:
+      - mongo:/data
+volumes:
+  mongo:

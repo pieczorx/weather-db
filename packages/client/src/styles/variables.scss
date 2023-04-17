@@ -1,0 +1,14 @@
+$colors: (
+  theme: #00d8ff,
+);
+
+$layerIndexes: (
+  pageLoadingBar: 1000,
+);
+
+@mixin zIndex($key) {
+  z-index: map-get($layerIndexes, $key);
+}
+
+$borderRadius: 20px;
+

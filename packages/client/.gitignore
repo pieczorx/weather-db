@@ -1,0 +1,8 @@
+node_modules
+*.log*
+.env
+dist
+dist-ssr
+*.local
+.build
+.dist

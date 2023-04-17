@@ -1,0 +1,39 @@
+{
+  "name": "pieczorx-weather-client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite --mode localhost",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "lint": "eslint . --ext .js,.vue,.ts",
+    "ts": "vue-tsc --noEmit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/preset-env": "^7.19.0",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/color": "^3.0.3",
+    "@types/node": "^18.7.10",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "8.22.0",
+    "eslint-plugin-vue": "^9.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7",
+    "vue-tsc": "^0.39.5"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv-extended": "^2.9.0",
+    "pinia": "^2.0.20",
+    "sass": "^1.52.3",
+    "vue": "^3.2.37",
+    "vue-meta": "^2.4.0",
+    "vue-router": "4"
+  }
+}
