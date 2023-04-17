@@ -1,12 +1,11 @@
 import {IWeatherProviderStrategy} from '../../../types/IWeatherProviderStrategy'
 import {inject, injectable} from 'inversify'
-import {IVerifyUserMailTemplateStrategyPayload} from './types/IVerifyUserMailTemplateStrategyPayload'
 import {InterfaceType} from '../../../../../enum/InterfaceType'
 import {IWeatherData} from '../../../../../models/mongoose/WeatherMeasurementModel/types/IWeatherData'
 import {IOpenWeatherMapService} from '../../../../OpenWeatherMapService/types/IOpenWeatherMapService'
 
 @injectable()
-export class OpenWeatherMapWeatherProviderStrategy implements IWeatherProviderStrategy<IVerifyUserMailTemplateStrategyPayload> {
+export class OpenWeatherMapWeatherProviderStrategy implements IWeatherProviderStrategy {
   constructor(
     @inject(InterfaceType.services.OpenWeatherMapService) private openWeatherMapService: IOpenWeatherMapService,
   ) {}
