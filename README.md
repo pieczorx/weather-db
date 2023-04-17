@@ -37,5 +37,6 @@ Frontend part of the application with pages, components and server api layer.
 - City suggestions & auto-completion
 - Temperature unit conversion (only Fahrenheit is available at this moment)
 - Some TS types are missing or broken (too much time needed to fix these)
+- Missing tests
 
 Thanks for reading :)
